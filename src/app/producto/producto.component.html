@@ -1,0 +1,16 @@
+<h2>Gestión de Productos</h2>
+<form [formGroup]="productoForm" (ngSubmit)="guardar()">
+  <input formControlName="nombre" placeholder="Nombre" />
+  <input formControlName="descripcion" placeholder="Descripción" />
+  <input formControlName="precio" type="number" placeholder="Precio" />
+  <input formControlName="categoriaId" type="number" placeholder="ID Categoría" />
+  <button type="submit">{{ editando ? 'Actualizar' : 'Guardar' }}</button>
+</form>
+
+<ul>
+  <li *ngFor="let p of productos">
+    {{ p.nombre }} - {{ p.precio }}
+    <button (click)="editar(p)">Editar</button>
+    <button (click)="eliminar(p.id)">Eliminar</button>
+  </li>
+</ul>

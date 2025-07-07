@@ -1,0 +1,64 @@
+<div class="container-fluid min-vh-100 d-flex justify-content-center align-items-center bg-light">
+  <div class="card shadow-lg border-0 rounded-4 overflow-hidden w-100" style="max-width: 900px;">
+    <div class="row g-0 flex-column flex-md-row">
+
+
+      <div class="col-md-6 bg-image">
+        <img
+          src="https://images.pexels.com/photos/32822405/pexels-photo-32822405.jpeg"
+          alt="Fashion Banner"
+          class="img-fluid w-100 h-100 object-fit-cover">
+      </div>
+
+
+      <div class="col-md-6 p-5 bg-white">
+        <h3 class="text-center mb-4">
+          <i class="bi bi-person-circle me-2"></i>
+          {{ isLoginMode ? 'Iniciar sesión' : 'Crear cuenta' }}
+        </h3>
+
+        <form>
+          
+          <div class="mb-3" *ngIf="!isLoginMode">
+            <input type="text" class="form-control" placeholder="Nombre completo">
+          </div>
+
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Correo electrónico">
+          </div>
+
+          <div class="mb-3">
+            <input type="password" class="form-control" placeholder="Contraseña">
+          </div>
+
+          <div class="form-check mb-3">
+            <input type="checkbox" class="form-check-input" id="rememberMe">
+            <label for="rememberMe" class="form-check-label">Recordarme</label>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-100">
+            {{ isLoginMode ? 'Iniciar sesión' : 'Registrarse' }}
+          </button>
+        </form>
+
+        <div class="text-center mt-3">
+          <small class="text-muted">
+            {{ isLoginMode ? '¿No tienes una cuenta?' : '¿Ya tienes una cuenta?' }}
+          </small>
+          <a class="text-primary text-decoration-none ms-1" (click)="toggleMode()" style="cursor: pointer;">
+            {{ isLoginMode ? 'Regístrate' : 'Inicia sesión' }}
+          </a>
+        </div>
+
+        <hr class="my-4">
+
+        <div class="text-center">
+          <p class="text-muted">O continúa con</p>
+          <button class="btn btn-outline-primary btn-sm me-2"><i class="bi bi-facebook"></i></button>
+          <button class="btn btn-outline-danger btn-sm me-2"><i class="bi bi-google"></i></button>
+          <button class="btn btn-outline-dark btn-sm"><i class="bi bi-github"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

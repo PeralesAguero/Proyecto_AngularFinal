@@ -1,0 +1,37 @@
+
+.bg-image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+
+input.form-control {
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+}
+
+
+button {
+  border-radius: 0.75rem;
+}
+
+
+.card {
+  transition: all 0.3s ease-in-out;
+}
+
+
+@media (max-width: 767px) {
+  .bg-image img {
+    max-height: 250px;
+  }
+
+  .card {
+    margin: 1rem;
+  }
+
+  input.form-control {
+    font-size: 1rem;
+  }
+}

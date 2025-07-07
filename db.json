@@ -1,0 +1,31 @@
+{
+  "categorias": [
+    { "id": 1, "nombre": "Electrodomésticos" },
+    { "id": 2, "nombre": "Tecnología" },
+    { "id": 3, "nombre": "Ropa" },
+    { "id": 4, "nombre": "Libros" },
+    { "id": 5, "nombre": "Juguetes" }
+  ],
+  "productos": [
+    { "id": 1, "nombre": "Refrigeradora LG", "descripcion": "2 puertas, no frost", "precio": 1500, "categoriaId": 1 },
+    { "id": 2, "nombre": "Microondas Samsung", "descripcion": "1000W digital", "precio": 450, "categoriaId": 1 },
+    { "id": 3, "nombre": "Licuadora Oster", "descripcion": "Vidrio reforzado", "precio": 280, "categoriaId": 1 },
+    { "id": 4, "nombre": "Smartphone Xiaomi", "descripcion": "Redmi Note 12", "precio": 900, "categoriaId": 2 },
+    { "id": 5, "nombre": "Smartwatch Huawei", "descripcion": "GT 3 Pro", "precio": 700, "categoriaId": 2 },
+    { "id": 6, "nombre": "Laptop Lenovo", "descripcion": "i7 16GB RAM", "precio": 3200, "categoriaId": 2 },
+    { "id": 7, "nombre": "Polera Adidas", "descripcion": "Negra, talla M", "precio": 120, "categoriaId": 3 },
+    { "id": 8, "nombre": "Casaca de cuero", "descripcion": "Talla L, sintética", "precio": 350, "categoriaId": 3 },
+    { "id": 9, "nombre": "Pantalón jean", "descripcion": "Azul, slim fit", "precio": 110, "categoriaId": 3 },
+    { "id": 10, "nombre": "Camisa manga larga", "descripcion": "Blanca, algodón", "precio": 95, "categoriaId": 3 },
+    { "id": 11, "nombre": "Harry Potter Box", "descripcion": "Colección completa", "precio": 300, "categoriaId": 4 },
+    { "id": 12, "nombre": "El Principito", "descripcion": "Versión ilustrada", "precio": 45, "categoriaId": 4 },
+    { "id": 13, "nombre": "1984 - George Orwell", "descripcion": "Clásico de ciencia ficción", "precio": 60, "categoriaId": 4 },
+    { "id": 14, "nombre": "Cien años de soledad", "descripcion": "Gabriel García Márquez", "precio": 70, "categoriaId": 4 },
+    { "id": 15, "nombre": "LEGO City", "descripcion": "Set de construcción", "precio": 250, "categoriaId": 5 },
+    { "id": 16, "nombre": "Muñeca Barbie", "descripcion": "Barbie fashionista", "precio": 130, "categoriaId": 5 },
+    { "id": 17, "nombre": "Pelota de fútbol", "descripcion": "Tamaño oficial", "precio": 100, "categoriaId": 5 },
+    { "id": 18, "nombre": "Control remoto RC", "descripcion": "Coche a control remoto", "precio": 180, "categoriaId": 5 },
+    { "id": 19, "nombre": "Audífonos Sony", "descripcion": "Bluetooth, cancelación de ruido", "precio": 450, "categoriaId": 2 },
+    { "id": 20, "nombre": "Hervidor eléctrico", "descripcion": "1.7L Inoxidable", "precio": 130, "categoriaId": 1 }
+  ]
+}
