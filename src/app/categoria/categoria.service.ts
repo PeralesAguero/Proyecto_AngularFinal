@@ -3,9 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Categoria } from './categoria.model';
 import { Observable } from 'rxjs';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable({ providedIn: 'root' })
 export class CategoriaService {
   private apiUrl = 'http://localhost:3000/categorias';
 
